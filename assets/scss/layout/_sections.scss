@@ -1,0 +1,208 @@
+/* Section Features */
+.features {
+    margin-top: 0;
+    position: relative;
+    bottom: 15rem;
+}
+
+.features__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: $xxxxx-large;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.bar {
+    width: 50%;
+    margin-left: 15rem;
+}
+
+.bar_graph {
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.text {
+    width: 60%;
+}
+
+.text__title {
+    font-size: $xxx-large;
+}
+
+.text__paragraph {
+    font-family: $open-sans;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .features {
+        position: static;
+        margin-top: 3rem;
+    }
+
+    .features__title {
+        font-size: $xxx-large;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%; 
+    }
+    
+    .bar {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .bar_graph {
+       width: 100%;
+       animation-name: opacity;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+    }
+
+    .text {
+        margin-top: 3rem;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .text__title {
+        font-size: $x-large;
+        line-height: 1.5;
+    }
+}
+
+@keyframes opacity {
+    5% {opacity: 0;}
+    50% {opacity: .5;}
+    100% {opacity: 1;}
+}
+
+/* Section Prices */
+.prices {
+    position: relative;
+     
+}
+
+.prices__title {
+    font-size: $xxxxx-large;
+    text-align: center;
+    position: relative;
+    bottom: 5rem;
+}
+
+.prices__grid {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.card {
+    background-color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    &:hover {
+        box-shadow: 5px 2px 10px $raising-black;
+    }
+}
+.cards__line {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cards__line-1 {
+    margin-top: 10rem;
+}
+
+.cards__line-2 {
+    margin-top: 4rem;
+}
+.card__title {
+    font-size: $x-large;
+    font-family: $open-sans;
+    font-weight: $regular;
+}
+
+.card__paragraph {
+    font-size: $xxx-large;
+    font-weight: $bold;
+    color: black;
+}
+
+.card__list {
+    line-height: 2;
+    font-family: $open-sans;
+}
+
+.card__button {
+    width: 100%;
+    padding: .5rem;
+    background-color: $ball-blue;
+    color:white;
+    font-family: $raleway;
+    font-weight: $regular;
+    font-size: $small;
+    margin-top: 1rem;
+    cursor: pointer;
+    &:hover {
+        background-color: $blue-lagoon;
+    
+    &:focus {
+        background-color: $silver-chalice;
+    }
+    }
+}
+
+@media (max-width: 768px) {
+    .prices {
+        margin-top: 5rem;
+    }
+
+    .prices__title {
+        position: relative;
+        top: 20rem;
+        color: white;
+    }
+
+    .prices__grid {
+        margin-top: 25rem;
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+    }
+
+    .card__title {
+        font-size: $x-large;
+        
+    }
+
+    .card__paragraph {
+        font-size: $xxxxx-large;
+        color: black;
+    }
+
+    .cards__line-1 {
+        margin-bottom: 3rem;
+    }
+   
+    .cards__line-2 {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,44 @@
+.header__text {
+    width: 30%;
+    margin-top: 3em;
+    margin-left: 3rem;
+}
+.header__text-title {
+    font-size: $xxxxx-large;
+    line-height: 1;
+}
+
+.header__text-paragraph {
+    font-size: $medium;
+    font-family: $open-sans;
+    line-height: 1.5;
+}
+
+.bg_image {
+    position: relative;
+    width: 100vw;
+    bottom: 15rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .header__text {
+        width: 85%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .header__text-title {
+        font-size: $xxx-large;
+        line-height: 2;
+    }
+    .header__text-paragraph {
+        font-size: $medium;
+        font-family: $open-sans;
+        line-height: 2;
+    }
+    .bg_image {
+        top: 1rem;
+        margin-bottom: 0;
+    }
+}
+
